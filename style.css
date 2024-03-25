@@ -1,25 +1,40 @@
 body {
-    background-color: rgb(255, 255, 255);
-    font: 1em sans-serif;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(254, 110, 110), rgb(163, 144, 155));
+   font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    margin: 0;
+   
     
 }
 
-.header-image {
+#header-image {
     display: flex;
    align-items: center;
    justify-content: center;
-    margin-bottom: 100px;
-    
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    box-shadow: 0 0 40px
     
 
 }
 
 
+hr {
+    display: block;
+    height: 1px;
+    border-top: 1px solid #000000;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 img {
-    border-radius: 10%;
     display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
     
     
 }
@@ -37,7 +52,11 @@ a:hover {
 .header {
     display: flex;
     justify-content:center;
-    margin-bottom: 20px;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-variant-caps: all-small-caps;
+    font-size:xx-large;
+   
+
     
 }
 
@@ -46,21 +65,33 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 
 
+}
+
+.item img:hover {
+    transform: scale(1.05);
+    transition: all ease ;
+    border-radius: 15px;
+    box-shadow: 0 0 5px
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
-    max-width: 200px;
+    max-width: 230px;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
    
 }
@@ -68,13 +99,13 @@ a:hover {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
     
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .flex-container {
         flex-direction: column;
         justify-content: center;
